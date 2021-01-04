@@ -1,0 +1,77 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  padding: 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+}
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center-align {
+  align-items: center;
+}
+.app {
+  height: 100%;
+  text-align: center;
+}
+.heading {
+  margin-bottom: 0.5rem;
+}
+.pdf-container {
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+.react-pdf__Document {
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: darksalmon;
+  border-radius: 0.3rem;
+}
+.page-nav {
+  margin: 0.3rem 0;
+}
+.nav-btns {
+  background: none;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.nav-btns:first-child img {
+  transform: rotate(180deg);
+}
+.nav-btns:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.nav-btns img {
+  width: 30px;
+  height: auto;
+}
+.react-pdf__Page {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+}
+.react-pdf__Page__canvas {
+  width: 100% !important;
+  min-width: 980px;
+}
+.pdf-footer p:first-child {
+  margin-top: 0.3rem;
+}
+.react-pdf__Page__annotations {
+  display: none;
+}
+.download-link {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+.download-link:hover {
+  text-decoration: underline;
+}
